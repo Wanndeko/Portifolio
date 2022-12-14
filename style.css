@@ -235,6 +235,7 @@ a:hover {
     flex-direction: column;
     justify-content: space-evenly;
     margin: 3rem 0;
+    background-color: #4682B4;
 }
 
 .card_container{
@@ -328,5 +329,30 @@ a:hover {
 }
 
 
+.sec_container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    margin: 3rem 0;
+    align-items: center;
+    justify-content: center;
+    background-color: #87CEEB;
+}
+
+.sobre_card{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sobre_card img{
+    animation: unset;
+    position: relative;
+}
+
+.text_sobre{
+    width: 50%;
+}
 
 
