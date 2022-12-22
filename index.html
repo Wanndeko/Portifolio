@@ -12,10 +12,9 @@
 <body>
     <nav class="menu_nav">
 
-        <a href="#">Home</a>
-        <a href="#">Sobre</a>
-        <a href="#">Projetos</a>
-        <a href="#">Contatos</a>
+        <a href="#sobre_eu">Sobre</a>
+        <a href="#projeto1">Projetos</a>
+        <a href="#linka">Contatos</a>
 
     </nav>
     <header class="header_container">
@@ -41,7 +40,7 @@
                             </li>
 
                             <li>
-                                <a href="#">Projetos</a>
+                                <a href="#projeto1">Projetos</a>
                             </li>
                         </ul>
                     </nav>
@@ -59,14 +58,14 @@
         </div>
     </header>
 
-    <div class="topc_projects">
+    <div class="topic">
         <h1>Projetos</h1>
     </div>
 
     <main class="container">
 
         <div class="card_container">
-            <div class="card">
+            <div class="card" id="projeto1">
                 <div class="card_wrapper">
                     <h2>Passe o mouse</h2>
                     <p>vem ver</p>
@@ -108,12 +107,12 @@
         </div>
     </main>
 
-    <div class="topc_projects">
+    <div class="topic">
         <h1>Sobre min</h1>
     </div>
 
     <section class="sec_container">
-        <div class="sobre_card">
+        <div class="sobre_card" id="sobre_eu">
             <img src="./assets/i_am_root.png" alt="root">
         </div>
         <div class="text_sobre">
@@ -124,10 +123,29 @@
         </div>
     </section>
 
+    
+    <div class="topic">
+        <h1>Tenho experiencia com:</h1>
+    </div>
+
+    <section class="experience">
+        <div class="exp">
+           <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank"><img src="./assets/html-5.png" alt="icon_html5"></a>
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank"><img src="./assets/css-3.png" alt="icon_css3"></a>
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank"><img src="./assets/java-script.png" alt="icon_js"></a>
+            <a href="https://pt-br.reactjs.org/docs/getting-started.html" target="_blank" rel="noopener noreferrer"><img src="./assets/react.png" alt="icon_react"></a>
+            <a href="https://git-scm.com/docs/git/pt_BR" target="_blank" rel="noopener noreferrer"><img src="./assets/Git-Icon-1788C.png" alt="icon_git"></a>
+            <a href="https://docs.github.com/pt" target="_blank" rel="noopener noreferrer"><img src="./assets/github.png" alt="icon_github"></a>
+        </div>
+    </section>
+
+    <div class="topic">
+        <h3>Contatos:</h3>
+    </div>
     <footer class="footer">
-        <h3>Contatos: clique nos icones =></h3>
         <a href="#">whats</a>
         <a href="#">email</a>
+        <a href="#" id="linka">LinkedIn</a>
 
 
 
