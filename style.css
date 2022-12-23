@@ -37,14 +37,18 @@
 
 }
 
-a {
+.menu_nav a{
     text-decoration: none;
 
 }
 
+.menu_nav a:hover{
+    color: #ffffff;
+}
+
 /* imagem sem fundo com uma leve animação */
 
-img {
+.header_container img {
     height: 660px;
     right: 15px;
     position: absolute;
@@ -105,8 +109,8 @@ h2 {
 
 }
 
-a:hover {
-    color: azure;
+.social_media a:hover {
+    background-color: #ffffff;
 }
 
 
@@ -247,7 +251,6 @@ a:hover {
 .exp{
     display: grid;
     grid-template-columns: 100px 100px 100px;
-    /* justify-content: center; */
     height: 100vh;
     width: 100vw;
     align-items: center;
@@ -255,16 +258,19 @@ a:hover {
     background-color: #1e1f24
 }
 .exp img{
-    animation: unset;
+
     height: 100px;
     position: relative;
     display: flex;
     cursor: pointer;
+    filter: grayscale(0.7);
     transition: 0.5s ease-in-out;
 }
 
 .exp img:hover{
     height:120px;
+    margin-bottom: 20px;
+    filter: unset;
 }
 
 
@@ -390,8 +396,8 @@ footer {
         font-size: 40px;
     }
 
-    a:hover {
-        color: #ffffffff;
+    .social_media a:hover {
+        background-color:  #ffffffff;
     }
 
 
