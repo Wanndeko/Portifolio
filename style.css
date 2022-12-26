@@ -244,14 +244,26 @@ h2 {
 }
 
 .text_sobre {
-    width: 50%;
+    text-align: justify;
+    font-size: 20px;
+    letter-spacing: 2px;
+    width: 80%;
+    line-height: 25px;
+    
 }
+
+.text_sobre p{
+    text-indent: 1%;
+
+}
+
 
 
 .exp{
     display: grid;
-    grid-template-columns: 100px 100px 100px;
-    height: 100vh;
+    grid-template-columns: 90px 90px 90px;
+    grid-template-rows: 1fr 1fr;
+    height: 70vh;
     width: 100vw;
     align-items: center;
     justify-content: space-evenly;
