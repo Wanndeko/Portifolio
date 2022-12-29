@@ -6,22 +6,33 @@
     box-sizing: border-box;
     font-family: 'Cabin', sans-serif;
     color: #3be22d;
+    text-decoration: none;
+   
 }
 
 
 .header_container {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-color: #1e1f24;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     box-sizing: border-box;
-    padding: 0 112px;
-    position: relative;
 
 }
+
+.wand{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+    margin-top: -5rem;
+    
+}
+
+
 
 .header {
     visibility: hidden;
@@ -29,18 +40,17 @@
 
 .menu_nav {
     display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
+    justify-content: flex-end;
+    gap: 20px;
     font-size: 25px;
-    background-color: #1e1f24;
-    width: 100vw;
-
+    background-color: #1e1f24c4;
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    position: fixed;
+    z-index: 3;
+    box-shadow: 0px 1px 4px;
 }
 
-.menu_nav a{
-    text-decoration: none;
-
-}
 
 .menu_nav a:hover{
     color: #ffffff;
@@ -97,7 +107,7 @@ h2 {
 
 
 .social_media a {
-    text-decoration: none;
+   
     color: #3be22d;
     padding: 1rem 4rem;
     border: 1px solid #3be22d;
@@ -115,7 +125,7 @@ h2 {
 
 
 .topic{
-    width: 100vw;
+    width: 100%;
     text-align: center;
     box-shadow: #4cf40a 0px 0px 20px 4px inset;
     background: linear-gradient(rgb(27 28 28) 16%, rgb(19 28 36) 63%);
@@ -124,7 +134,7 @@ h2 {
 
 .container {
     height: auto;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -224,7 +234,7 @@ h2 {
 
 .sec_container {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -264,7 +274,7 @@ h2 {
     grid-template-columns: 90px 90px 90px;
     grid-template-rows: 1fr 1fr;
     height: 70vh;
-    width: 100vw;
+    width: 100%;
     align-items: center;
     justify-content: space-evenly;
     background-color: #1e1f24
@@ -293,9 +303,18 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     height: 100px;
-    width: 100vw;
+    width: 100%;
     background-color: #1e1f24
 }
+
+
+
+h3{
+    
+    box-shadow: rgb(76 244 10) 0px 0px 8px 3px inset;
+    background: linear-gradient(rgb(27, 28, 28) 16%, rgb(19, 28, 36) 63%);
+}
+
 
 @media screen and (max-width: 1060px) {
 
@@ -318,7 +337,7 @@ footer {
     .checkbox {
         height: 100px;
         width: 100px;
-        position: absolute;
+        position: fixed;
         right: 0;
         top: 0;
         display: flex;
@@ -331,7 +350,7 @@ footer {
     .checkbox .trace {
         width: 50px;
         height: 2px;
-        background-color: #020D42;
+        background-color: #3be22d;
         position: absolute;
         border-radius: 4px;
         transition: 0.5s ease-in-out;
@@ -366,14 +385,13 @@ footer {
     /* menu */
 
     .menu {
-        position: absolute;
+        position: fixed;
         top: 28px;
         right: 30px;
         background-color: transparent;
         height: 4px;
         width: 10px;
         border-radius: 50%;
-        box-shadow: 0px 0px 0px 0px #ffffffff;
         z-index: -1;
         transition: 400ms ease-in-out 0s;
     }
@@ -401,8 +419,7 @@ footer {
 
     .menu_itens ul li a {
         margin: 10px 0;
-        color: #020D42;
-        text-decoration: none;
+       
         text-transform: uppercase;
         letter-spacing: 4px;
         font-size: 40px;
@@ -434,13 +451,8 @@ footer {
         top: 48px;
     }
 
-    #toggle:checked+.checkbox {
-        background-color: #ffffffff;
-
-    }
-
     #toggle:checked~.menu {
-        box-shadow: 0px 0px 0px 90vmax #ffffffff;
+        box-shadow: rgb(30 31 36 / 73%) 0px 0px 0px 90vmax;
         z-index: 1;
     }
 
