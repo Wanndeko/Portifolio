@@ -252,11 +252,11 @@ footer {
     background-color: #1e1f24
 }
 
-.footer p{
+.footer p {
     font-size: 25px;
 }
 
-.footer img{
+.footer img {
     height: 40px;
 }
 
@@ -270,6 +270,8 @@ h3 {
 
 
 @media screen and (max-width: 1060px) {
+
+    /* menu responsivo inicio */
 
     .header {
         visibility: visible;
@@ -416,4 +418,92 @@ h3 {
     }
 
 
+    /* menu responsivo fim */
+
+
+    .header_container {
+        height: 100vh;
+        width: 100%;
+        background-color: #1e1f24;
+        box-sizing: border-box;
+    }
+
+    .header_container img {
+        left: 21rem;
+        top: -7rem;
+    }
+
+    .wand {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 4rem;
+        margin-top: 25rem;
+        margin-left: 11rem;
+    }
+ 
+
 }
+
+@media screen and (max-width: 970px) {
+
+    .header_container img {
+        left: 16rem;
+        top: -7rem;
+    }
+
+    .wand {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 4rem;
+        margin-top: 25rem;
+        margin-left: 12rem;
+    }
+
+
+    h1{
+        font-size: 40px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
+
+    .imagem_p img {
+        height: 220px;
+        width: 190px;
+        border-radius: 100%;
+        filter: grayscale(0.8);
+        transition: 0.5s ease-in-out;
+    }
+
+    .imagem_p img:hover{
+        height: 240px;
+    }
+
+    .proje_text{
+        font-size: 14px;
+    }
+    
+    .text_sobre{
+        font-size: 18px;
+    }
+
+    .container {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: #1e1f24;
+        gap: 3rem;
+        padding: 2rem;
+
+}
+
+
+
+
+
+
+ 
+    
