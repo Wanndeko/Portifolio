@@ -501,6 +501,56 @@ h3 {
 }
 
 
+@media screen and (max-width: 390px){
+    .header_container {
+     align-items: stretch;
+    }
+
+    .header_container img {
+        height: 630px;
+        position: inherit;
+       
+    }
+
+    .wand {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 4rem;
+        margin-top: -5rem;
+        margin-left: 0;
+    }
+
+    h1 {
+        font-size: 30px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    h2{
+        letter-spacing: 2px;
+    }
+
+    .text_sobre{
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .text_sobre p {
+        text-indent: 4%;
+    }
+
+    .footer p{
+        font-size: 20px;
+    }
+
+    .footer img{
+        height:30px;
+    }
+
+}
+
+
 
 
 
