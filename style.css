@@ -441,7 +441,7 @@ h3 {
         margin-top: 25rem;
         margin-left: 11rem;
     }
- 
+
 
 }
 
@@ -462,7 +462,7 @@ h3 {
     }
 
 
-    h1{
+    h1 {
         font-size: 40px;
         text-transform: uppercase;
         letter-spacing: 4px;
@@ -476,15 +476,15 @@ h3 {
         transition: 0.5s ease-in-out;
     }
 
-    .imagem_p img:hover{
+    .imagem_p img:hover {
         height: 240px;
     }
 
-    .proje_text{
+    .proje_text {
         font-size: 14px;
     }
-    
-    .text_sobre{
+
+    .text_sobre {
         font-size: 18px;
     }
 
@@ -498,18 +498,19 @@ h3 {
         gap: 3rem;
         padding: 2rem;
 
+    }
+
 }
 
-
-@media screen and (max-width: 700px){
+@media screen and (max-width: 700px) {
     .header_container {
-     align-items: stretch;
+        align-items: stretch;
     }
 
     .header_container img {
-        height: 630px;
+        height: 530px;
         position: inherit;
-       
+
     }
 
     .wand {
@@ -527,11 +528,11 @@ h3 {
         letter-spacing: 2px;
     }
 
-    h2{
+    h2 {
         letter-spacing: 2px;
     }
 
-    .text_sobre{
+    .text_sobre {
         font-size: 14px;
         text-align: justify;
     }
@@ -540,21 +541,26 @@ h3 {
         text-indent: 4%;
     }
 
-    .footer p{
+    .footer p {
         font-size: 20px;
     }
 
-    .footer img{
-        height:30px;
+    .footer img {
+        height: 30px;
     }
 
 }
 
-
-
-
-
-
- 
-    
+@media screen and (max-width: 700px){
+.wand h1{
+    font-size: 24px;
+    letter-spacing: 1px;
 }
+
+.wand h2{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+}
+
+
